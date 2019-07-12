@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+
+<head>
+    <meta charset="utf-8">
+    <script type="text/javascript" src="js/handler.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link href="css/style_loading.css" rel="stylesheet" type="text/css">
+    <title>Compress your video</title>
+</head>
+
+<body>
+    <script>
+        handlerServerFileExtensions(<%= typeof  myVar != 'undefined' ? myVar : "" %>, <%= typeof uploadLimit != 'undefined' ? uploadLimit : "" %>);
+    </script>
+    <header>
+    </header>
+    <p style="text-align:center; margin:0 auto; width:150px; border:2px solid orange;color:white; margin-top:2%; font-size: 30px; color:orange;">
+        Upload <b>YOUR</b> video
+    </p>
+    <main>
+        <form name="formular" action="/upload" id="form" method="POST" accept="video/*" enctype="multipart/form-data">
+            <div class="grid-container">
+                <div class="grid-item">
+                    <div id="dropZone">
+                        <input name="file" type="file" id="fileinput" onchange="ValidateSize(this)">
+                    </div>
+                </div>
+                <div class="grid-item">
+                    <div id="zoneMargin">
+                        <div id="infoZone">
+                            <b>codec</b>
+                            <input class="checkBoxes" name="checkBoxDataCodec" type="radio" id="h264" value="h264" checked />
+                            <label for="h264">H264</label>
+                            <input class="checkBoxes" name="checkBoxDataCodec" type="radio" id="h265" value="h265" />
+                            <label for="h265">H265</label>
+                            <input class="checkBoxes" name="checkBoxDataCodec" type="radio" id="av1" value="av1" disabled />
+                            <label for="av1">AV1 <i>(very slow)</i></label>
+                        </div>
+                        <div id="infoZone">
+                            <b>resolution</b>
+                            <input class="checkBoxes" name="checkBoxDataRes" type="radio" id="100" value="100" />
+                            <label for="100">100%</label>
+                            <input class="checkBoxes" name="checkBoxDataRes" type="radio" id="75" value="75" />
+                            <label for="75">75%</label>
+                            <input class="checkBoxes" name="checkBoxDataRes" type="radio" id="50" value="50" />
+                            <label for="50">50%</label>
+                            <input class="checkBoxes" name="checkBoxDataRes" type="radio" id="25" value="25" checked />
+                            <label for="50">25%</label>
+                        </div>
+                        <div id="infoZone">
+                            <b>frames/s</b>
+                            <input type="range" id="framePerSecond" name="framePerSecond" min="1" max="120" value="25" oninput="amount.value=framePerSecond.value">
+                            <output id="amount" name="amount" for="framePerSecond">25</output> frames/s
+                        </div>
+                        <div id="infoZone">
+                            <b>audio</b>
+                            <input class="checkBoxes" name="checkBoxDataAudio" type="radio" id="audio_on" value="audio_on" checked/>
+                            <label for="audio_on">on<label>
+                            <input class="checkBoxes" name="checkBoxDataAudio" type="radio" id="audio_off" value="audio_off" />
+                            <label for="audio_off">off</label>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <p id="msg">
+                <%= typeof msg != 'undefined' ? msg : ''; %>
+            </p>
+            <div id="infoBox">
+                <img src="img/info.png">With this web-application, you can upload and compress video files very easy. First change the settings and then upload your file!
+                <p></p> <b>Available formats: mp4, mov</b>
+            </div>
+        </form>
+    </main>
+    <!-- loading screen will enabled after submit -->
+    <div class="loader">
+    </div>
+    <footer>
+        Ein Projekt im Rahmen des Studiengangs angewandte Informatik<br/> &copy; Jan Braitinger, Weingarten 2019
+    </footer>
+</body>
+
+</html>

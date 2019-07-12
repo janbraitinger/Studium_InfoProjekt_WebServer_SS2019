@@ -1,0 +1,99 @@
+#dropZone {
+    width: 55%;
+    height: 300px;
+    border: 1px dashed black;
+    text-align: center;
+    line-height: 450px;
+    background-color: white;
+    color: grey;
+    float: right;
+    border-radius: 15px;
+    background-image: url("../img/upload_grey.png");
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+#infoZone {
+    padding: 15px;
+    margin: 2%;
+    width: 50%;
+    border: 1px dashed black;
+    background-color: white;
+    font-size: 15px;
+    padding-left: 15px;
+}
+
+hr {
+    border-top: 1px dashed black;
+    margin-left: -15px;
+}
+
+body {
+    background-color: #333333;
+    font-family: "Open-Sans", Arial, Helvetica, sans-serif;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    padding: 10px;
+}
+
+.grid-item {
+    padding: 20px;
+    font-size: 30px;
+}
+
+* {
+    padding: 0px;
+    margin: 0px;
+}
+
+header {
+    background-color: lightblue;
+    height: 40px;
+    vertical-align: middle;
+    line-height: 40px;
+    padding: 5px;
+}
+
+footer {
+    background-color: lightblue;
+    text-align: center;
+    font-size: 11px;
+    bottom: 0;
+    width: 100%;
+    padding: 10px 0 10px 0;
+    position: absolute;
+    margin-top: 250px;
+}
+
+#infoBox {
+    margin: 0 auto;
+    background-color: lightskyblue;
+    width: 55%;
+    border: 1px solid black;
+    padding: 1%;
+    color: #2B2B2B;
+    font-size: 15px;
+    display: grid;
+    grid-template-columns: 5% auto;
+}
+
+#msg {
+    color: red;
+    font-size: 18px;
+    text-align: center;
+    margin: 10px;
+}
+
+#framePerSecond {
+    width: 60%;
+    margin-left: 3%;
+    vertical-align: middle;
+}
+
+main {
+    margin: 0 auto;
+    padding: 1%;
+}

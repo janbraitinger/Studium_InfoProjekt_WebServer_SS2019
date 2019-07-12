@@ -1,0 +1,115 @@
+<html>
+
+<head>
+    <link href="css/style_show.css" rel="stylesheet" type="text/css">
+    <title>Your Video</title>
+    <script>
+        function handler() {
+            ceckCodec();
+        }
+
+        function ceckCodec() {
+            let tmp = document.getElementById("codec").innerHTML;
+            if (tmp.includes('libx265')) {
+                alert('This player can not plays a H265 video. But you can download it!')
+            }
+
+        }
+    </script>
+</head>
+
+<body onload="handler()">
+    <header>
+        <a href="/" style="text-decoration: none; color:#333333;"> &#8592; back to the upload page</a>
+    </header>
+    <main>
+        <div class="grid-container">
+            <div class="grid-item">
+                <video style="width:100%;" autoplay controls loop>
+                <source src="<%= link %>"> type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+            </div>
+            <div class="grid-item">
+                <hr>
+                <br />
+                <center>
+                    <table style="text-align: left;">
+                        <tr>
+                            <td>Name:</td>
+                            <td>
+                                <%= videoname %>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Deadline</td>
+                            <td>
+                                <%= date %>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Größe</td>
+                            <td>
+                                <%= size %>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Länge</td>
+                            <td>
+                                <%= length %>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Codec</td>
+                            <td id="codec">
+                                <%= codec %>
+                            </td>
+                        </tr>
+                    </table>
+                    <br/>
+                    <br />
+                    <br/><br/>
+                </center>
+                <hr />
+
+            </div>
+            <div class="grid-item">
+                <div id="downloadArea">
+
+                    <div style="float:right;">
+
+                        <h3><textarea id="textarea"><%= url %></textarea></h3>
+
+                        <script>
+                            function copyUrl() {
+                                let textarea = document.getElementById("textarea");
+                                textarea.select();
+                                document.execCommand("copy");
+                            }
+                        </script>
+                    </div>
+                    <div>
+                        <button onclick="copyUrl()" id="btn">Copy URL</button>
+                    </div>
+
+
+
+                </div>
+
+            </div>
+
+            <div class="grid-item">
+
+                <a href="<%= link %>" download><button id="btn" style="width: 100%; margin-top: 25px;">Download Videofile</button></a>
+
+            </div>
+        </div>
+    </main>
+    <footer>
+
+        Ein Projekt im Rahmen des Studiengangs angewandte Informatik<br/> &copy; Jan Braitinger, Weingarten 2019
+
+    </footer>
+</body>
+
+</html>
