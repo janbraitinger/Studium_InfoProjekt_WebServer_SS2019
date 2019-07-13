@@ -1,5 +1,20 @@
-# InformatikProjektSS2019
-Dieses Projekt entstand im Rahmen des Informatikprojektes des Studiengangs Angewandte Informatik im Sommersemester 2019. \\
-Als Projektziel wurde gewählt, dass einxe Webanwendung geschrieben werden soll, welche mittels dem Projekt \textit{FFmpeg} (eine Reihe von Programmen und Bibliotheken zum komprimieren und konvertieren) Videodateien online konvertieren kann. Umgesetzt wurde das als klassisches Client-Server-Prinzip.\\[1cm]
-Betreut wurde das Projekt durch Prof. Dr. Marius Hofmeister.\\
-Hochschule Ravensburg-Weingarten, 2019
+## How to 'install' the webserver
+
+#### pull repository
+Pull this repository https://github.com/janbraitinger/Studium_InfoProjekt_WebServer_SS2019 or download and unzip it.
+#### download mongodb
+Download the databasehandler 'mongodb' at https://www.mongodb.com/download-center/community and install it.<br/>
+Use the <b>complete</b> installer and don't change the settings
+#### download ffmpeg and set the path in sourcecode of ffmpeghandler.js
+Download ffmpeg here: https://ffmpeg.org/download.html <br/>
+After this, change the path to the new <b>ffmpeg.exe</b> on 'ffmpegHandler.js'.
+```javascript
+var ffmpeg = require('fluent-ffmpeg');
+ffmpeg.setFfmpegPath("C:\\ffmpeg\\bin\\ffmpeg.exe");    // <-- change path 
+```
+#### run it
+run the command node app.js or just nodemon on the termianl. <br/>
+But for this, you have to be in the right folder.
+
+
+
