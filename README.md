@@ -1,6 +1,3 @@
-# WebServer to compress videodata
-This web server is programmed in JavaScript. 
-### installation
 #### pull repository
 Pull this repository https://github.com/janbraitinger/Studium_InfoProjekt_WebServer_SS2019 or download and unzip it
 #### download mongodb
