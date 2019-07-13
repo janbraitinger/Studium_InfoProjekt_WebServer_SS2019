@@ -13,8 +13,10 @@ var ffmpeg = require('fluent-ffmpeg');
 ffmpeg.setFfmpegPath("C:\\ffmpeg\\bin\\ffmpeg.exe");    // <-- change path 
 ```
 #### run it
-run the command node app.js or just nodemon on the termianl. <br/>
-But for this, you have to be in the right folder.
-
-
-
+```console
+node app.js 
+```
+or just
+```console
+nodemon
+```
