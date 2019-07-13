@@ -5,7 +5,7 @@ Download the databasehandler 'mongodb' at https://www.mongodb.com/download-cente
 Use the <b>complete</b> installer and don't change the settings
 #### download ffmpeg and set the path in sourcecode of ffmpeghandler.js
 Download ffmpeg here: https://ffmpeg.org/download.html <br/>
-After this, change the path on the file 'ffmpegHandler.js' on line 9.
+After this, change the path to the new <b>ffmpeg.exe</b> on 'ffmpegHandler.js'.
 ```javascript
 var ffmpeg = require('fluent-ffmpeg');
 ffmpeg.setFfmpegPath("C:\\ffmpeg\\bin\\ffmpeg.exe");    // <-- change path 
