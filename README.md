@@ -1,16 +1,17 @@
 #### pull repository
-Pull this repository https://github.com/janbraitinger/Studium_InfoProjekt_WebServer_SS2019 or download and unzip it
+Pull this repository https://github.com/janbraitinger/Studium_InfoProjekt_WebServer_SS2019 or download and unzip it.
 #### download mongodb
-Download the databasehandler mongodb at https://www.mongodb.com/download-center/community and install it
-Use the complete installer and don't change the settings
+Download the databasehandler 'mongodb' at https://www.mongodb.com/download-center/community and install it.<br/>
+Use the <b>complete</b> installer and don't change the settings
 #### download ffmpeg and set the path in sourcecode of ffmpeghandler.js
-Download ffmpeg here: https://ffmpeg.org/download.html 
-After this, change the path on the file 'ffmpegHandler.js' on line 9
+Download ffmpeg here: https://ffmpeg.org/download.html <br/>
+After this, change the path on the file 'ffmpegHandler.js' on line 9.
 ```javascript
-ffmpeg.setFfmpegPath("C:\\ffmpeg\\bin\\ffmpeg.exe");
+var ffmpeg = require('fluent-ffmpeg');
+ffmpeg.setFfmpegPath("C:\\ffmpeg\\bin\\ffmpeg.exe");    // <-- change path 
 ```
 #### run it
-run the command node app.js or just nodemon on the termianl. 
+run the command node app.js or just nodemon on the termianl. <br/>
 But for this, you have to be in the right folder.
 
 
