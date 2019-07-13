@@ -1,3 +1,5 @@
+## How to 'install' the webserver
+
 #### pull repository
 Pull this repository https://github.com/janbraitinger/Studium_InfoProjekt_WebServer_SS2019 or download and unzip it.
 #### download mongodb
