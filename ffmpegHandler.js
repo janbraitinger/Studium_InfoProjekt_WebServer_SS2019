@@ -6,7 +6,11 @@
 print("FFmpeg Handler initiallisiert");
 
 var ffmpeg = require('fluent-ffmpeg');
+
+//set path to ffmpeg.exe || important: \\ instead of \ for the path
+//################################################
 ffmpeg.setFfmpegPath("C:\\ffmpeg\\bin\\ffmpeg.exe");
+//################################################
 
 const compressedPath = "/upload/compressed/",
     _standardFPS = '25',
