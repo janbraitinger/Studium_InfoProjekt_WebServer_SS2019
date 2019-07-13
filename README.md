@@ -5,9 +5,9 @@ Pull this repository https://github.com/janbraitinger/Studium_InfoProjekt_WebSer
 #### download mongodb
 Download the databasehandler 'mongodb' at https://www.mongodb.com/download-center/community and install it.<br/>
 Use the <b>complete</b> installer and don't change the settings
-#### download ffmpeg and set the path in sourcecode of ffmpeghandler.js
+#### download ffmpeg and set new path 
 Download ffmpeg here: https://ffmpeg.org/download.html <br/>
-After this, change the path to the new <b>ffmpeg.exe</b> on 'ffmpegHandler.js'.
+After this, change the path to the new <b>ffmpeg.exe</b> on 'ffmpegHandler.js' (line 9).
 ```javascript
 var ffmpeg = require('fluent-ffmpeg');
 ffmpeg.setFfmpegPath("C:\\ffmpeg\\bin\\ffmpeg.exe");    // <-- change path 
