@@ -2,6 +2,8 @@
 
 ### pull repository
 Pull this repository https://github.com/janbraitinger/Studium_InfoProjekt_WebServer_SS2019 or download and unzip it.
+### download and install node.js
+https://code.tutsplus.com/
 ### download mongodb
 Download the databasehandler 'mongodb' at https://www.mongodb.com/download-center/community and install it.<br/>
 Use the <b>complete</b> installer and don't change the settings
