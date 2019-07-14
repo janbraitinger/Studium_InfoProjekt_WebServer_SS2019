@@ -14,6 +14,7 @@ After this, change the path to the new <b>ffmpeg.exe</b> on 'ffmpegHandler.js' (
 var ffmpeg = require('fluent-ffmpeg');
 ffmpeg.setFfmpegPath("C:\\ffmpeg\\bin\\ffmpeg.exe");    // <-- change path 
 ```
+<i>notice: Change the path style from C:\ffmpeg\bin\ffmpeg.exe to C:\\ffmpeg\\bin\\ffmpeg.exe (double slash instead of one) <i>
 ### run it
 ```console
 node app.js 
