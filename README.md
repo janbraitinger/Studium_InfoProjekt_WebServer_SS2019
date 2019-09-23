@@ -1,4 +1,4 @@
-## How to 'install' the webserver
+## How to 'install' the webserver (only for windows)
 
 ### pull repository
 Pull this repository https://github.com/janbraitinger/Studium_InfoProjekt_WebServer_SS2019 or download and unzip it.
