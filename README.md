@@ -1,5 +1,5 @@
-## How to 'install' the webserver (only for windows)
-
+## How to 'install' (only for windows)
+This project, based on node.js, is a webapplication to compress videodata (with ffmpeg). 
 ### pull repository
 Pull this repository https://github.com/janbraitinger/Studium_InfoProjekt_WebServer_SS2019 or download and unzip it.
 ### download and install node.js
