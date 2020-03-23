@@ -12,11 +12,8 @@
     <script>
         handlerServerFileExtensions(<%= typeof  myVar != 'undefined' ? myVar : "" %>, <%= typeof uploadLimit != 'undefined' ? uploadLimit : "" %>);
     </script>
-    <header>
-    </header>
-    <p style="text-align:center; margin:0 auto; width:150px; border:2px solid orange;color:white; margin-top:2%; font-size: 30px; color:orange;">
-        Upload <b>YOUR</b> video
-    </p>
+
+
     <main>
         <form name="formular" action="/upload" id="form" method="POST" accept="video/*" enctype="multipart/form-data">
             <div class="grid-container">
@@ -75,9 +72,7 @@
     <!-- loading screen will enabled after submit -->
     <div class="loader">
     </div>
-    <footer>
-        Ein Projekt im Rahmen des Studiengangs angewandte Informatik<br/> &copy; Jan Braitinger, Weingarten 2019
-    </footer>
+
 </body>
 
 </html>
