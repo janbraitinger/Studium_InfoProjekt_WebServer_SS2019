@@ -1,3 +1,6 @@
+`Status: old and bad`
+<br>When I find time, I will re-engineer this project.
+
 ## How to 'install' (only for windows)
 This project, based on node.js, is a webapplication to compress videodata (with ffmpeg). 
 ### pull repository
